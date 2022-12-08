@@ -58,7 +58,7 @@ jobs:
       # CodeDeploy에게 배포 명령을 내립니다.
       - name: Code Deploy
         run: >
-          aws deploy create-deployment --application-name be-72-sangwonee
+          aws deploy create-deployment --application-name be-72-Sangwonee
           --deployment-config-name CodeDeployDefault.AllAtOnce
-          --deployment-group-name be-72-sangwonee-group
+          --deployment-group-name be-72-Sangwonee-group
           --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
